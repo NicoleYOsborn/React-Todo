@@ -5,7 +5,7 @@ class TodoForm extends React.Component {
         super()
         this.state={
             item: ''
-        }
+        };
     }
 
 handleChanges = e=>{
@@ -13,6 +13,8 @@ handleChanges = e=>{
         item: e.target.value
     });
 };
+
+
 
 handleSubmit = e =>{
     e.preventDefault();

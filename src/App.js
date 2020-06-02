@@ -42,6 +42,14 @@ addItem=(itemName)=>{
   });
 };
 
+clearCompleted = () => {
+  this.setState({
+    items: this.state.items.filter(item => 
+        !item.completed
+    )
+  })
+}
+
 toggleItem = itemId=>{
   this.setState({
     items: this.state.items.map(item=>{
@@ -68,6 +76,7 @@ toggleItem = itemId=>{
         <TodoList
         toggleItem={this.toggleItem}
         items={this.state.items}
+        clearCompleted = {this.clearCompleted}
         />
       </div>
     );

@@ -3,6 +3,14 @@
 import React from 'react';
 import Todo from './Todo';
 
+// const clearCompleted = () => {
+//     this.setState({
+//       items: this.state.items.filter(item => 
+//           !item.completed
+//       )
+//     })
+//   }
+
 const TodoList = props =>{
 
     return(
